@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Livros</title>
+  <style>
+    body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+    input, select, button { margin: 5px 0; width: 100%; padding: 8px; }
+    .livro { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Catálogo de Livros</h1>
+
+  <h2>Adicionar Livro</h2>
+  <input id="titulo" placeholder="Título">
+  <input id="autor" placeholder="Autor">
+  <input id="genero" placeholder="Gênero">
+  <input id="ano" type="number" placeholder="Ano de publicação">
+  <button onclick="adicionarLivro()">Adicionar Livro</button>
+
+  <h2>Buscar Livro</h2>
+  <input id="busca" placeholder="Buscar por título, autor ou gênero" oninput="buscarLivro()">
+
+  <h2>Livros</h2>
+  <div id="listaLivros"></div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>  
